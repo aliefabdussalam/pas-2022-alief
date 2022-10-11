@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: hsl(217, 54%, 11%);
+}
+.main .prev-nft{
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 590px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+.prev-nft .image{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+.prev-nft .image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    opacity: 1;
+    
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.overlay{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+    transform:translate(-0%, -101%);
+    border-radius: 10px;
+}
+.overlay .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+.image:hover .overlay{
+    opacity: 0.5;
+    cursor: pointer;
+} 
+.image:hover .img{
+    opacity: 0.5;
+    
+}
+.prev-nft .nftName{
+    color: white;
+    font-size: 23px;
+    padding: 25px;
+}
+.nftName:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.prev-nft .nftDesc{
+    padding: 0px 25px 25px 25px;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+.prev-nft .priceDate{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px 25px 25px;
+    
+}
+.priceDate .price {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.priceDate .price svg{
+    padding-top: 1px;
+    padding-right: 5px;
+}
+.priceDate .date{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+}
+.priceDate .date svg{
+    padding-top: 1.5px;
+    padding-right: 5px;
+}
+.border{
+    border: 0.5px solid hsl(215, 32%, 27%);
+    width: 85%;
+    margin: auto;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.creator .imageCreator{
+    padding: 18px 25px 25px 25px;
+    height: 35px;
+    width: 35px;
+    
+}
+.creator .imageCreator img{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    border: 0.5pt solid white;
+   
+}
+.creator .creation{
+    color: hsl(215, 51%, 70%);
+}
+.creator .creatorName{
+    color: white;
+    padding-left: 2px;
+}
